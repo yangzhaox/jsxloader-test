@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSX Loader test</title>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dataformsjs@5.9.1/js/react/jsxLoader.min.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</head>
+
+<body>
+    <div id='react-root' />
+    <script type='text/babel' data-type='module'>
+        'use strict'
+        ReactDOM.render(<App />, document.querySelector('#react-root'))
+    </script>
+</body>
+
+</html>
